@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title></title>
+    <script src="http://unkpg.com/vue"></script>
+  </head>
+  <body>
+
+    <div id="app-14">
+      <input type="radio" id="india" value="India" v-model="selected">
+      <label for="india">India</label>
+
+      <input type="radio" id="japan" value="Japan" v-model="selected">
+      <label for="japan">Japan</label>
+
+      <input type="radio" id="china" value="China" v-model="selected">
+      <label for="china">China</label>
+      <br>
+      <p>{{selected}}</p>
+    </div>
+
+    <script>
+      var app14 = new Vue({
+        el:"#app-14",
+        data:{
+          selected:"India"
+        }
+      })
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Multiple checkboxes</title>
+    <script src="http://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+    <div id="app-13">
+      <input type="checkbox" id="india" value="India" v-model="selected">
+      <label for="india">India</label>
+      <!--
+        type, id, value, v-model: for both checkboxes and radio
+      -->
+
+      <input type="checkbox" id="japan" value="Japan" v-model="selected">
+      <label for="japan">Japan</label>
+
+      <input type="checkbox" id="china" value="China" v-model="selected">
+      <label for="china">China</label>
+
+      <p>{{selected}}</p>
+    </div>
+    <script>
+      var app13=new Vue({
+        el:"#app-13",
+        data:{
+          selected:[]
+        }
+      })
+    </script>
+  
+  </body>
+</html>
