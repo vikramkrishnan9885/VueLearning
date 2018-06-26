@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Beginning Components</title>
+    <script src="http://unpkg.com/vue"></script>    
+  </head>
+  <body>
+    <div id="app-8">
+      <ol>
+          <book-item></book-item>
+      </ol> 
+    </div>
+    <script>
+      Vue.component('book-item',{
+        template:'<li>War and Peace</li>'
+      })
+
+      var app8 = new Vue({
+        el:'#app-8'
+      })
+    </script>
+  </body>
+</html>

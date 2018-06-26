@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Beginning Props</title>
+    <script src="http://unpkg.com/vue"></script>  
+  </head>
+  <body>
+    <div id="app-9">
+      <ol>
+        <book-item
+          v-for='item in bookList'
+          v-bind:book="item"
+          v-bind:key="item.id"
+        >
+        <!--note that we gave our books iterator a name like item
+          you then v-bind using the variable name given in the props
+          in your Vue.component. You can then bind the key to the id
+          Note that the component is used as a tag here
+        -->
+      </book-item>
+      </ol>
+    </div>
+    <script src="09-beginning-props.js"></script>
+    <!--
+      Note how we have split the file into two: One with the JS and 
+      one with the html
+    -->
+  </body>
+</html>

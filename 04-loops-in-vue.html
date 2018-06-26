@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Loops in Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app-4">
+      <h1>Book List:</h1>
+      <ol>
+        <li v-for="book in books">
+          {{book.title}}
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      var app4 = new Vue({
+        el:'#app-4',
+        data:{
+          books:[
+            {title: 'Wuthering Heights'},
+            {title: 'War and Peace'},
+            {title: 'A Study in Scarlet'}
+          ]
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Conditionals in Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app-3">
+        <span v-if="visible">
+          Now you see me
+        </span>
+    </div>
+
+    <script>
+      var app3 = new Vue({
+        el:'#app-3',
+        data:{
+          visible: false
+        }
+      })
+    </script>
+  </body>
+</html>

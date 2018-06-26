@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>My second Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app-2">
+      <span v-bind:title="message">
+        Hower over this for a few seconds to see dynamically bound title
+      </span>
+    </div>
+    <script>
+      var app2 = new Vue({
+        el: '#app-2', // The div name
+        data: {
+          message: 'The time is ' + new Date().toLocaleString() 
+          // v-bind binds the element attributes, in this case title, to the data on the Vue app.
+          // Don't forget the parantheses
+        }
+      })
+    </script>
+  </body>
+</html>
